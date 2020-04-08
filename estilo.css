@@ -1,0 +1,28 @@
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th, td {
+  text-align: center;
+  padding: 7px;
+  font-family: "Arial", serif;
+}
+
+table {
+  /*border-spacing: 1px;
+  só funcionará sem o border-collapse*/
+  background-color: #282629;
+  color: white;
+}
+
+/*========================= Formularios =========================*/
+.form-row {
+  margin-right: 5px;
+  display: block;
+}
+
+#botao {
+  margin-left: 93%;
+  display: inline;
+}

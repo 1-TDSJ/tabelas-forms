@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Formulários</title>
+  </head>
+  <body>
+    <div id="container">
+<!--- Formulário --->
+      <div>
+        <form action="formularios.html" method="get" onsubmit="alert('Cadastro sendo efetuado...')">
+
+          <fieldset>
+            <legend>Informações</legend>
+            <div class="form-row">
+              <label for="txtNome">Nome:</label>
+              <input id="txtNome" type="text" name="txtNome" placeholder="Insira seu nome" required="required" value="">
+            </div>
+<br>
+          <fieldset>
+            <legend>Gênero</legend>
+            <div class="form-row">
+              <input  id="idGeneroMasc" type="radio" name="txtGenero" checked="checked">
+              <label for="idGeneroMasc">Masculino</label>
+            </div>
+            <div class="form-row">
+              <input  id="idGeneroFem" type="radio" name="txtGenero">
+              <label for="idGeneroFem">Feminino</label>
+            </div>
+            <div class="form-row">
+              <input  id="idGeneroNd" type="radio" name="txtGenero">
+              <label for="idGeneroNd">Não definido</label>
+            </div>
+          </fieldset>
+<br>
+            <div class="form-row">
+              <label for="txtCPF">CPF:</label>
+              <input id="txtCPF" type="number" name="txtCPF" value="" placeholder="Insira seu CPF" required="required">
+            </div>
+<br>
+            <div class="form-row">
+              <label for="txtCEP">CEP:</label>
+              <input id="txtCEP" type="number" name="txtCEP" value="" placeholder="Insira seu CEP" required="required">
+            </div>
+<br>
+            <div class="form-row">
+              <label for="txtEstado">Estado:</label>
+              <select id="txtEstado" type="n" name="txtEstado" value="" required="required">
+              <option value="" selected="select">Selecione uma opção</option>
+              <option value="SP">São Paulo</option>
+              <option value="RJ">Rio de Janeiro</option>
+              <option value="PA">Pará</option>
+            </div>
+            <div>
+              <input id="botao" type="submit" value="Enviar">
+            </div>
+
+          </fieldset>
+
+        </form>
+      </div>
+<!--- Fim --->
+    </div>
+  </body>
+</html>

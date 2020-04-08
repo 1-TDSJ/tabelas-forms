@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Tabelas</title>
+  </head>
+  <body>
+<!--- Primeira tabela --->
+    <div id="container">
+      <table>
+        <tr>
+          <th>Nome</th>
+          <th>CEP</th>
+          <th>Estado</th>
+          <th>Cidade</th>
+        </tr>
+        <tr>
+          <!--
+          Mesclar(juntar) células:
+          *Linha* = <td colspan="2">Pedro</td>
+          *Coluna* = <td rowspan="2"="2">Pedro</td>
+          --->
+          <td>Pedro</td>
+          <td>04545-002</td>
+          <td>SP</td>
+          <td>São Paulo</td>
+        </tr>
+        <tr>
+          <td>João</td>
+          <td>06589-226</td>
+          <td>MG</td>
+          <td>Belo Horizonte</td>
+        </tr>
+        <tr>
+          <td>Matheus</td>
+          <td>58622-005</td>
+          <td>SC</td>
+          <td>Florianópolis</td>
+        </tr>
+      </table>
+    </div>
+<br>
+<!--- Segunda tabela --->
+  <table>
+    <tr>
+      <th>Nome</th>
+      <th>CPF</th>
+      <th>RG</th>
+    </tr>
+    <tr>
+      <td>Pedro</td>
+      <td>317.160.848-06</td>
+      <td>37.388.908-2</td>
+    </tr>
+    <tr>
+      <td>João</td>
+      <td>123.456.789-10</td>
+      <td>12.345.678-9</td>
+    </tr>
+    <tr>
+      <td>Matheus</td>
+      <td>123.456.789-10</td>
+      <td>12.345.678-9</td>
+    </tr>
+  </table>
+<!--- Fim --->
+  </body>
+</html>

@@ -1,0 +1,41 @@
+  <!Doctype html>
+  <html lang="pt-br" dir="ltr">
+   <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width,initial-scale=1">
+     <title>FORMS</title>
+
+     <style media="screen">
+
+
+
+     </style>
+
+   </head>
+   <body>
+     <div id="container">
+
+        <div>
+          <form action="exemplo2.html" method="get" onsubmit="alert('Login sendo efetuado...')">
+                <fieldset>
+                  <legend>LOGIN</legend>
+                  <div class="form-row">
+                    <label for="idUserNm">Username :</label>
+                    <input  id="idUserNm" type="text" name="txtUserNm"
+                     placeholder="Digite seu nome de usuário." required="required">
+                  </div>
+                  <div class="form-row">
+                    <label for="idPass">Senha :</label>
+                    <input  id="idPass" type="password" name="txtPass"
+                     placeholder="Digite sua senha." required="required">
+                  </div>
+                  <div class="form-row">
+                    <input  type="submit" value="LOGIN">
+                  </div>
+                </fieldset>
+          </form>
+        </div>
+
+     </div>
+   </body>
+</html>

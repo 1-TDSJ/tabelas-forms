@@ -7,9 +7,7 @@
 
      <style media="screen">
 
-        .form-row {
-          display: inline-block;
-        }
+
 
 
      </style>
@@ -27,6 +25,22 @@
                     <input  id="idNm" type="text" name="txtNm"
                      placeholder="Digite seu nome." required="required">
                   </div>
+
+                  <fieldset>
+                    <legend>Gênero</legend>
+                  <div class="form-row">
+                    <label for="idGeneroMasc">Masculino :</label>
+                    <input  id="idGeneroMasc" type="radio" name="txtGenero" checked="checked">
+                  </div>
+                  <div class="form-row">
+                    <label for="idGeneroFem">Feminino :</label>
+                    <input  id="idGeneroFem" type="radio" name="txtGenero">
+                  </div>
+                  <div class="form-row">
+                    <label for="idGeneroNd">Não Definido :</label>
+                    <input  id="idGeneroNd" type="radio" name="txtGenero">
+                  </div>
+</fieldset>
                   <div class="form-row">
                     <label for="idCpf">Cpf :</label>
                     <input  id="idCpf" type="number" name="txtCpf"
@@ -42,11 +56,13 @@
                     <select  id="idEstado" name="txtEstado"
                      required="required">
                       <option value="">SELECIONE UMA OPÇÃO</option>
-                      <option value="sp">SÃO PAULO</option>
+                      <option value="sp" selected="select">SÃO PAULO</option>
                       <option value="rj">RIO DE JANEIRO</option>
                       <option value="pa">PARÁ</option>
                     </select>
                   </div>
+
+
 
                   <div class="form-row">
                     <input  type="submit" value="LOGIN">

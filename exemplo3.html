@@ -1,0 +1,60 @@
+  <!Doctype html>
+  <html lang="pt-br" dir="ltr">
+   <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width,initial-scale=1">
+     <title>FORMS</title>
+
+     <style media="screen">
+
+        .form-row {
+          display: inline-block;
+        }
+
+
+     </style>
+
+   </head>
+   <body>
+     <div id="container">
+
+        <div>
+          <form action="exemplo3.html" method="get" onsubmit="alert(idNm.value+'\n'+idCpf.value+'\n'+idCep.value+'\n'+idEstado.value)">
+                <fieldset>
+                  <legend>INFORMAÇÕES</legend>
+                  <div class="form-row">
+                    <label for="idNm">Nome :</label>
+                    <input  id="idNm" type="text" name="txtNm"
+                     placeholder="Digite seu nome." required="required">
+                  </div>
+                  <div class="form-row">
+                    <label for="idCpf">Cpf :</label>
+                    <input  id="idCpf" type="number" name="txtCpf"
+                     placeholder="Digite seu Cpf." required="required">
+                  </div>
+                  <div class="form-row">
+                    <label for="idCep">Cep :</label>
+                    <input  id="idCep" type="number" name="txtCep"
+                     placeholder="Digite seu Cep." required="required">
+                  </div>
+                  <div class="form-row">
+                    <label for="idEstado">Estado :</label>
+                    <select  id="idEstado" name="txtEstado"
+                     required="required">
+                      <option value="">SELECIONE UMA OPÇÃO</option>
+                      <option value="sp">SÃO PAULO</option>
+                      <option value="rj">RIO DE JANEIRO</option>
+                      <option value="pa">PARÁ</option>
+                    </select>
+                  </div>
+
+                  <div class="form-row">
+                    <input  type="submit" value="LOGIN">
+                  </div>
+                </fieldset>
+          </form>
+        </div>
+
+     </div>
+   </body>
+</html>

@@ -6,15 +6,45 @@
      <title>TABLE</title>
 
      <style media="screen">
-        table{
-            
+
+        table,th,td{
+          border: 1px solid black;
+          /* Se usar collapse não pode usar border-spacing*/
+          border-collapse: collapse;
         }
+
+        th, td{
+          font-size: 20px;
+          font-family: 'Consolas', serif;
+          padding: 10px;
+        }
+/* Se usar border-spacing não pode usar collapse
+        table{
+          border-spacing: 2px;
+*/
      </style>
 
    </head>
    <body>
      <div id="container">
 
+
+<!-- COLSPAN e ROLSPAN -->
+
+  <table>
+      <tr>
+        <th>Nome</th>
+        <th>CPF</th>
+        <th>*</th>
+      </tr>
+      <tr>
+        
+      </tr>
+  </table>
+
+
+
+<!-- Tabela normal
        <table>
          <tr>
            <th>nome</th>
@@ -41,7 +71,7 @@
            <td>Santa Rita</td>
          </tr>
        </table>
-
+-->
      </div>
    </body>
 </html>
